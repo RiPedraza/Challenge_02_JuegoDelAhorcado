@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Juego del ahorcado - Challenge Sprint Nº2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="div_Logo">
+            <img class="logo" src="logo.svg" alt="logo de Alura">
+            <h1>Alura Challenges ONE - Juego del Ahorcado</h1>
+        </div>
+    </header>
+
+    <main>       
+        <!-- Juego del AHORACADO -->
+        <section id="seccionDeJuego">
+            
+            <article class="article_alert" id="article_alert">
+                <div class="div_alerta_gano" id="div_alerta_gano">
+                    <h2>USTED GANÓ EL JUEGO</h2>
+                    <P>Felicidades! Quiere intentarlo de nuevo?</P>
+                    <button class="btn_ok_gano" id="btn_ok_gano" onclick="location.href='jugar.html'">OK</button>
+                </div>
+
+                <div class="div_alerta_perdio" id="div_alerta_perdio">
+                    <h2>USTED PERDIO!</h2>
+                    <P>Ánimo! Quiere intentarlo de nuevo?</P>
+                    <button class="btn_ok_perdio" id="btn_ok_perdio" onclick="location.href='jugar.html'">OK</button>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <canvas width="600px" height="400px"></canvas>
+                </div>
+                <div>
+                    <input type="text" class="input_text" id="input_text" placeholder="Ingrese una palabra.." maxlength="1" >
+                    
+                </div>
+                <div class="div_letas">
+                    <label for="lbl_PalabrasCorrectas" class="lbl_PalabrasCorrectas" id="lbl_PalabrasCorrectas"></label>
+                </div>
+                <div class="div_letas">
+                    <label for="lbl_PalabrasIncorrectas" class="lbl_PalabrasIncorrectas" id="lbl_PalabrasIncorrectas"></label>
+                </div>
+                <div class="div_btn">
+                    <button class="btn01" id="btn_JuegoNuevo" onclick="location.href='jugar.html'">Nuevo juego</button>
+                    <button class="btn02" id="btn_Inicio2" onclick="location.href='index.html'">Salir</button>
+                    <button class="ocultar" id="btn_AgregarPalabra">Guardar nueva palabra</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        Autor: Ricardo Pedraza. Developer in training.<br>
+        #challengeonecodificador3 
+    </footer>
+</body>
+</html>
+
+<script src="agregar.js"></script>
+<script src="jugar.js"></script>

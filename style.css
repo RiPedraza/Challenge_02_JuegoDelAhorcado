@@ -1,0 +1,217 @@
+body{
+    background: #E5E5E5;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+h1{
+    display: contents;
+    
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgba(10, 56, 113, 1);
+}
+
+.div_Logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    
+}
+
+
+.article_alert{
+    position: fixed;
+    background:#303c47; 
+    border: 5px #4a5d6e outset;
+    height: 70vh;
+    
+    min-width: 50%;
+    max-width: 60%;
+    margin: 0 auto;
+
+    display: grid;
+    align-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.div_alerta_gano{
+    margin: 0px 1rem;
+    padding: 1rem 1rem;
+    background:#93e67e; 
+    text-align: center;
+}
+
+.div_alerta_perdio{
+    margin: 0px 1rem;
+    padding: 1rem 1rem;
+    background: rgb(228, 139, 139); 
+    text-align: center;
+}
+
+
+/* ////////////////////////////////////////// */
+/** SECTION'S **/
+.ocultar{
+    display: none; /*En la hoja de jugar, para evitar el mensaje error*/
+}
+
+/**********************************/
+.input_text, .inputAgregarPalabra{
+    width: 50%;
+    height: 1rem;
+    margin: 0.3rem auto;
+    display: block;
+}
+
+.inputAgregarPalabra{
+    margin-bottom: 3rem;
+}
+
+.div_letas{
+    width: fit-content;
+    margin: 0.3rem auto;
+}
+
+.lbl_PalabrasIncorrectas{
+    font-size: 1rem;
+}
+
+.lbl_PalabrasCorrectas{
+    font-size: 1rem;
+}
+
+
+.div_btn{
+    text-align: center;
+}
+
+/**********************************/
+
+.btn01, .btn02{
+    height: 50px;
+    width: 200px;
+    border-radius: 24px;
+    padding: 15px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.btn01{
+    background: #0A3871;
+    color: #FFFFFF;
+    border-color: #E5E5E5;
+}
+
+.btn02{
+    background:   rgba(179, 218, 231, 0.733);
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+.lbl_PalabrasCorrectas{
+    letter-spacing: 10px;
+    font-size: x-large;
+}
+
+.lbl_PalabrasIncorrectas{
+    color: rgb(138, 7, 7);
+    letter-spacing: 7px;
+}
+
+.btn_ok_perdio, .btn_ok_gano{
+    background: #4a5d6e;
+    border-color: grey;
+    width: 20%;
+}
+
+.inicio, .agregarPalabra{
+    min-height: 50vh;
+    padding-top: 15%;
+}
+
+/* ////////////////////////////////////////// */
+/** FOOTER **/
+hr{
+    margin-top: 1em;
+}
+
+footer{
+    padding-left: 1em;
+    font-family: 'Inter';
+    font-style: oblique;
+    font-size: 18px;
+    color: #303c47;
+}
+
+
+/* ////////////////////////////////////////// */
+/** RESPONSIVE PARA CELULARES **/
+
+@media screen and (max-width:480px){
+    body{
+        display: inline-block;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    h1{
+        display: contents;
+        padding: 1em;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: rgba(10, 56, 113, 1);
+    }
+
+    .input_text{
+        width: 83%;
+        height: 4rem;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .div_letas{
+        width: fit-content;
+        margin: 2rem auto;
+    }
+
+    .lbl_PalabrasIncorrectas{
+        font-size: 3rem;
+    }
+
+    .lbl_PalabrasCorrectas{
+        font-size: 4rem;
+    }
+
+    .article_alert{
+        min-width: 90%;
+    }
+
+    .div_btn{
+        text-align: center;
+    }
+
+
+   
+}
